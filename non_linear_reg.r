@@ -1,7 +1,7 @@
 # By Gaurav Yadav
 # reading file and storing that in matrix form
 X = as.matrix(read.table("Iris_data_norm_train.txt",sep=","))
-in_size <- ncol(X)
+in_size <- ncol(X)-1
 
 x <- X[,1:in_size]
 Y <- X[,in_size+1]
